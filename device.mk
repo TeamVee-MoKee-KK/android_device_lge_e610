@@ -32,13 +32,12 @@ PRODUCT_AAPT_CONFIG := normal mdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 PRODUCT_COPY_FILES += \
-    device/lge/e610/init.m4.rc:root/init.m4.rc \
-    device/lge/e610/ueventd.m4.rc:root/ueventd.m4.rc \
-    device/lge/e610/fstab.m4:root/fstab.m4
+    device/lge/e610/rootdir/root/fstab.m4:root/fstab.m4 \
+    device/lge/e610/rootdir/root/init.m4.rc:root/init.m4.rc \
+    device/lge/e610/rootdir/root/ueventd.m4.rc:root/ueventd.m4.rc
 
 PRODUCT_COPY_FILES += \
-    device/lge/e610/configs/m4_keypad.kl:system/usr/keylayout/m4_keypad.kl \
-    device/lge/e610/configs/touch_mcs8000.idc:system/usr/idc/touch_mcs8000.idc \
-    device/lge/e610/configs/touch_mcs8000.kl:system/usr/keylayout/touch_mcs8000.kl
+    device/lge/e610/rootdir/system/usr/keylayout/m4_keypad.kl:system/usr/keylayout/m4_keypad.kl \
+    device/lge/e610/rootdir/system/usr/keylayout/touch_mcs8000.kl:system/usr/keylayout/touch_mcs8000.kl
 
 include device/lge/e610/system_prop.mk
