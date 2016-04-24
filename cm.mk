@@ -25,10 +25,8 @@ $(call inherit-product, device/lge/e610/full_e610.mk)
 TARGET_SCREEN_HEIGHT := 480
 TARGET_SCREEN_WIDTH := 320
 
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := e610
+# Device identifier. This must come after all inclusions
 PRODUCT_NAME := cm_e610
-PRODUCT_BRAND := lge
-PRODUCT_MODEL := LG-E610
-PRODUCT_MANUFACTURER := LGE
-PRODUCT_CHARACTERISTICS := phone
+PRODUCT_RELEASE_NAME := L5
+
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0

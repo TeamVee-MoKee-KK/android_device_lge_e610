@@ -16,3 +16,6 @@
 $(call inherit-product, device/lge/e610/full_e610.mk)
 
 PRODUCT_NAME := aosp_e610
+PRODUCT_RELEASE_NAME := L5
+
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
