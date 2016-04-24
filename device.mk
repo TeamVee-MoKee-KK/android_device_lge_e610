@@ -1,5 +1,5 @@
-#
 # Copyright (C) 2013 The Android Open-Source Project
+# Copyright (C) 2016 The TeamVee-M4 Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -32,11 +32,13 @@ PRODUCT_AAPT_CONFIG := normal mdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.m4.rc:root/init.m4.rc \
-    $(LOCAL_PATH)/ueventd.m4.rc:root/ueventd.m4.rc \
-    $(LOCAL_PATH)/fstab.m4:root/fstab.m4
+    device/lge/e610/init.m4.rc:root/init.m4.rc \
+    device/lge/e610/ueventd.m4.rc:root/ueventd.m4.rc \
+    device/lge/e610/fstab.m4:root/fstab.m4
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/m4_keypad.kl:system/usr/keylayout/m4_keypad.kl \
-    $(LOCAL_PATH)/configs/touch_mcs8000.idc:system/usr/idc/touch_mcs8000.idc \
-    $(LOCAL_PATH)/configs/touch_mcs8000.kl:system/usr/keylayout/touch_mcs8000.kl
+    device/lge/e610/configs/m4_keypad.kl:system/usr/keylayout/m4_keypad.kl \
+    device/lge/e610/configs/touch_mcs8000.idc:system/usr/idc/touch_mcs8000.idc \
+    device/lge/e610/configs/touch_mcs8000.kl:system/usr/keylayout/touch_mcs8000.kl
+
+include device/lge/e610/system_prop.mk
