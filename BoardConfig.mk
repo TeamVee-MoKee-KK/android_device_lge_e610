@@ -10,7 +10,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=m4 androidboot.selinux=permissive
 
 TARGET_KERNEL_CONFIG := cyanogenmod_m4_defconfig
 
-TARGET_RECOVERY_FSTAB := device/lge/e610/fstab.m4
+TARGET_RECOVERY_FSTAB := device/lge/e610/rootdir/root/fstab.m4
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/e610/bluetooth
 
