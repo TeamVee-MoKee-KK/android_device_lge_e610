@@ -15,3 +15,7 @@ TARGET_RECOVERY_FSTAB := device/lge/e610/rootdir/root/fstab.m4
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/e610/bluetooth
 
 BOARD_CUSTOM_GRAPHICS := ../../../device/lge/e610/recovery/graphics.c
+
+# Unified Device
+TARGET_UNIFIED_DEVICE := true
+TARGET_OTA_ASSERT_DEVICE := E610,e610,E612,e612,E617,e617,m4
