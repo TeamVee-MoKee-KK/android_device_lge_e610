@@ -24,8 +24,6 @@ $(call inherit-product, device/lge/msm7x27a-common/nfc.mk)
 
 $(call inherit-product-if-exists, vendor/lge/e610/e610-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/lge/e610/overlay
-
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
 PRODUCT_AAPT_CONFIG := normal mdpi hdpi
