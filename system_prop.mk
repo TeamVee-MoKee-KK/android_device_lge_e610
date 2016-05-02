@@ -15,7 +15,5 @@
 
 # Lcd Density
 PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density="160"
-# HWC Dyn Threshold
-PRODUCT_PROPERTY_OVERRIDES += debug.hwc.dynThreshold="1.91"
 # Enable LPA
 PRODUCT_PROPERTY_OVERRIDES += lpa.decode="true"
