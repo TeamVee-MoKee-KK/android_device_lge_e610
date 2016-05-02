@@ -55,8 +55,8 @@ void vendor_load_properties() {
 
     if (strlen(gversionbb) == 0) {
         property_set("gsm.version.baseband", "V20");
-        property_set("ro.product.device", "e610");
-        property_set("ro.product.model", "e610");
+        property_set("ro.product.device", "m4");
+        property_set("ro.product.model", "m4");
     };
 
     property_get("gsm.version.baseband", o_gversionbb);
