@@ -16,9 +16,6 @@
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/lge/e610/full_e610.mk)
 

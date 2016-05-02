@@ -8,7 +8,7 @@ TARGET_BOOTLOADER_BOARD_NAME := e610
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=m4 androidboot.selinux=permissive
 
-TARGET_KERNEL_CONFIG := cyanogenmod_m4_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_m4_nonfc_defconfig
 
 TARGET_RECOVERY_FSTAB := device/lge/e610/rootdir/root/fstab.m4
 
