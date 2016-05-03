@@ -19,6 +19,9 @@
 #
 # Everything in this directory will become public
 
+
+DEVICE_PACKAGE_OVERLAYS += device/lge/e610/overlay
+
 $(call inherit-product, device/lge/msm7x27a-common/msm7x27a-common.mk)
 
 $(call inherit-product-if-exists, vendor/lge/e610/e610-vendor.mk)
