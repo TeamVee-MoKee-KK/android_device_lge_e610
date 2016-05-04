@@ -22,4 +22,4 @@ TARGET_OTA_ASSERT_DEVICE := E610,e610,E612,e612,E617,e617,m4
 
 # Set Device in init based on baseband
 TARGET_INIT_VENDOR_LIB := libinit_m4
-TARGET_LIBINIT_DEFINES_FILE := device/lge/msm7x27a-common/init/init_m4.c
+TARGET_LIBINIT_DEFINES_FILE := device/lge/e610/init/init_m4.c
