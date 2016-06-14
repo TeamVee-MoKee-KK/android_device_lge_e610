@@ -36,4 +36,8 @@ PRODUCT_COPY_FILES += \
     device/lge/e610/rootdir/system/usr/keylayout/m4_keypad.kl:system/usr/keylayout/m4_keypad.kl \
     device/lge/e610/rootdir/system/usr/keylayout/touch_mcs8000.kl:system/usr/keylayout/touch_mcs8000.kl
 
+# Light HAL
+PRODUCT_PACKAGES += \
+    lights.msm7x27a
+
 include device/lge/e610/system_prop.mk
