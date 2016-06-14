@@ -19,7 +19,6 @@ LGE_PROJECT := l
 
 # inherit from the proprietary version
 -include vendor/lge/e610/BoardConfigVendor.mk
-TARGET_BOOTLOADER_BOARD_NAME := e610
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=m4 androidboot.selinux=permissive
 
