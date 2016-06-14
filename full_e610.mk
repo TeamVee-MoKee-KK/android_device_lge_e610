@@ -1,4 +1,3 @@
-#
 # Copyright 2013 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,25 +13,19 @@
 # limitations under the License.
 #
 
-# Sample: This is where we'd set a backup provider if we had one
-# $(call inherit-product, device/sample/products/backup_overlay.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/e610/device.mk)
 
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := e610
+# Device identifier. This must come after all inclusions
 PRODUCT_NAME := full_e610
-PRODUCT_BRAND := lge
-PRODUCT_MODEL := LG-E610
+PRODUCT_DEVICE := e610
+PRODUCT_BRAND := LGE
+PRODUCT_MODEL := e610
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_CHARACTERISTICS := phone
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=m4_open_eu \
     BUILD_FINGERPRINT="lge/m4_open_eu/m4:4.1.2/JZO54K/E61020c-EUR-XX.1367460723:user/release-keys" \
     PRIVATE_BUILD_DESC="m4_open_eu-user 4.1.2 JZO54K E61020c-EUR-XX.1367460723 release-keys"
-
-# Release name and versioning
-PRODUCT_RELEASE_NAME := OptimusL5
-PRODUCT_VERSION_DEVICE_SPECIFIC :=

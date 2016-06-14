@@ -2,7 +2,6 @@ import init.lge-shared.rc
 
 on fs
     mount_all fstab.m4
-
     swapon_all fstab.m4
 
 on early-boot
@@ -11,7 +10,6 @@ on early-boot
     chmod 0777 /dev/input/event3
 
 on post-fs-data
-
     chown system system /sys/module/lge_emmc_direct_access/parameters/lcd_k_cal
     chown system system /sys/devices/platform/msm_fb.590593/mdp_kcal
     chmod 0755 /sys/devices/platform/msm_fb.590593/mdp_kcal
