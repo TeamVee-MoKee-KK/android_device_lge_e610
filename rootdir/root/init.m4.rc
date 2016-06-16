@@ -17,7 +17,6 @@ import init.lge.shared.rc
 
 on fs
     mount_all fstab.m4
-    swapon_all fstab.m4
 
 on early-boot
     chmod 0777 /dev/input/event0
