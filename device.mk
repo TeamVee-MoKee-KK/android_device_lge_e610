@@ -16,13 +16,10 @@
 # This file includes all definitions that apply to ALL L5 devices
 # Everything in this directory will become public
 
-DEVICE_PACKAGE_OVERLAYS += device/lge/e610/overlay
-
 $(call inherit-product, device/lge/msm7x27a-common/msm7x27a-common.mk)
-
 $(call inherit-product-if-exists, vendor/lge/e610/e610-vendor.mk)
 
-$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
+DEVICE_PACKAGE_OVERLAYS += device/lge/e610/overlay
 
 PRODUCT_AAPT_CONFIG := normal mdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
@@ -33,7 +30,28 @@ PRODUCT_COPY_FILES += \
     device/lge/e610/rootdir/root/ueventd.m4.rc:root/ueventd.m4.rc
 
 PRODUCT_COPY_FILES += \
+    device/lge/msm7x27a-common/rootdir/system/etc/AudioFilter.csv:system/etc/AudioFilter.csv \
+    device/lge/msm7x27a-common/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    device/lge/msm7x27a-common/rootdir/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/lge/msm7x27a-common/rootdir/system/etc/media_profiles.xml:system/etc/media_profiles.xml
+
+PRODUCT_COPY_FILES += \
     device/lge/e610/rootdir/system/usr/keylayout/m4_keypad.kl:system/usr/keylayout/m4_keypad.kl \
     device/lge/e610/rootdir/system/usr/keylayout/touch_mcs8000.kl:system/usr/keylayout/touch_mcs8000.kl
+
+PRODUCT_COPY_FILES += \
+    device/lge/e610/recovery/root/sbin/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
+
+# Light HAL
+PRODUCT_PACKAGES += \
+    lights.msm7x27a
+
+# Enable Torch
+PRODUCT_PACKAGES += \
+    Torch
+
+# HWComposer
+PRODUCT_PACKAGES += \
+    hwcomposer.msm7x27a
 
 include device/lge/e610/system_prop.mk

@@ -14,5 +14,5 @@
 # limitations under the License.
 
 ifeq ($(TARGET_DEVICE),e610)
-include $(call first-makefiles-under,$(call my-dir))
+include $(call all-makefiles-under,$(call my-dir))
 endif
