@@ -30,17 +30,14 @@ PRODUCT_COPY_FILES += \
     device/lge/e610/rootdir/root/ueventd.m4.rc:root/ueventd.m4.rc
 
 PRODUCT_COPY_FILES += \
-    device/lge/msm7x27a-common/rootdir/system/etc/AudioFilter.csv:system/etc/AudioFilter.csv \
-    device/lge/msm7x27a-common/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    device/lge/msm7x27a-common/rootdir/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    device/lge/msm7x27a-common/rootdir/system/etc/media_profiles.xml:system/etc/media_profiles.xml
-
-PRODUCT_COPY_FILES += \
     device/lge/e610/rootdir/system/usr/keylayout/m4_keypad.kl:system/usr/keylayout/m4_keypad.kl \
     device/lge/e610/rootdir/system/usr/keylayout/touch_mcs8000.kl:system/usr/keylayout/touch_mcs8000.kl
 
 PRODUCT_COPY_FILES += \
-    device/lge/e610/recovery/root/sbin/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
+    device/lge/msm7x27a-common/rootdir/system/etc/gen1_media_profiles.xml:system/etc/media_profiles.xml
+
+PRODUCT_COPY_FILES += \
+    device/lge/msm7x27a-common/recovery/root/sbin/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
 
 # Light HAL
 PRODUCT_PACKAGES += \
