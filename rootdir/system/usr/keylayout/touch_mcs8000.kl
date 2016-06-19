@@ -13,13 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-key 158   BACK              VIRTUAL
-key 229   MENU              VIRTUAL
-key 139   MENU              VIRTUAL
-key 59    MENU              VIRTUAL
-key 115   VOLUME_UP         WAKE
-key 114   VOLUME_DOWN       WAKE
-key 116   POWER             WAKE
-key 172   HOME              WAKE_DROPPED
-key 1     BACK              WAKE_DROPPED
-key 68    MENU              WAKE_DROPPED
+key 158   BACK
+key 229   MENU
+key 139   MENU
+key 59    MENU
+key 115   VOLUME_UP
+key 114   VOLUME_DOWN
+key 116   POWER
+key 172   HOME
+key 1     BACK
+key 68    MENU
