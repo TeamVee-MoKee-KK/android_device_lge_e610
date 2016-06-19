@@ -21,7 +21,7 @@ $(call inherit-product-if-exists, vendor/lge/e610/e610-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/lge/e610/overlay
 
-PRODUCT_AAPT_CONFIG := normal mdpi hdpi
+PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 PRODUCT_COPY_FILES += \
