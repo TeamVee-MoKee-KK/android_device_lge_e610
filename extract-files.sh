@@ -16,7 +16,7 @@
 
 set -e
 
-export DEVICE=p700
+export DEVICE=e610
 export VENDOR=lge
 ./../msm7x27a-common/extract-files.sh $@
 
