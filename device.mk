@@ -47,4 +47,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hwcomposer.msm7x27a
 
-include device/lge/e610/system_prop.mk
+# Lcd Density
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density="160"
+
+# Enable LPA
+PRODUCT_PROPERTY_OVERRIDES += \
+    lpa.decode="true"
