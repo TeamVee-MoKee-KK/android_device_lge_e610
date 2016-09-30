@@ -50,7 +50,3 @@ PRODUCT_PACKAGES += \
 # Lcd Density
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density="160"
-
-# Enable LPA
-PRODUCT_PROPERTY_OVERRIDES += \
-    lpa.decode="true"
